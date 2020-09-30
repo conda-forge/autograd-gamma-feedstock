@@ -1,18 +1,18 @@
 {% set name = "autograd-gamma" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.3" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: "3b4349cb415bd6e28dd2fac5055e34de1b6c87fe711757a0e42a84bd650fba35"
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 2cb570cbb8da61ede937ccc004d87d3924108f754b351a86cdd2ad31ace6cdf6
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
@@ -28,12 +28,12 @@ test:
     - autograd_gamma
 
 about:
-  home: "https://github.com/CamDavidsonPilon/autograd-gamma"
-  license: "MIT"
-  license_family: "MIT"
-  license_file: "LICENSE"
-  summary: "Autograd compatible approximations to the gamma family of functions"
-  dev_url: "https://github.com/CamDavidsonPilon/autograd-gamma"
+  home: https://github.com/CamDavidsonPilon/autograd-gamma
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: Autograd compatible approximations to the gamma family of functions
+  dev_url: https://github.com/CamDavidsonPilon/autograd-gamma
 
 extra:
   recipe-maintainers:
