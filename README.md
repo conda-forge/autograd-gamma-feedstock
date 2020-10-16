@@ -5,11 +5,11 @@ Home: https://github.com/CamDavidsonPilon/autograd-gamma
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/autograd-gamma-feedstock/blob/master/LICENSE.txt)
 
 Summary: Autograd compatible approximations to the gamma family of functions
 
-
+Development: https://github.com/CamDavidsonPilon/autograd-gamma
 
 Current build status
 ====================
